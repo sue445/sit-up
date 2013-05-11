@@ -17,3 +17,9 @@ Implement `LunchMembers.shuffle` and refactor spec.
 Rename and refactor `EachAndInclude.method_foo`.
 
 Also spec should be refactored too.
+
+4. tap_tap
+
+Rename and refactor `TapTap.method_foo` and `TapTap.method_bar`.
+
+Also spec should be refactored too.
