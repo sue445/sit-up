@@ -4,3 +4,4 @@ require 'rspec'
 
 require 'generate_hash'
 require 'lunch_members'
+require 'each_and_include'
