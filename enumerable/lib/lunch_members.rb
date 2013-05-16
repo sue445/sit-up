@@ -6,5 +6,10 @@
 
 class LunchMembers
   def self.shuffle(members)
+    groups = []
+    members.shuffle.each_slice((members.length + 1) / 2) do |members|
+      groups << members
+    end
+    groups
   end
 end
