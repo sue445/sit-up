@@ -6,8 +6,6 @@ describe LunchMembers do
     let(:all_members) { %w[foo bar baz hoge piyo fuga moge gori] }
     subject { LunchMembers.shuffle(all_members) }
     it 'returns 2 divided teams' do
-      subject.count.should == 2
-
       members = []
       subject.each do |group|
         group.count.should <= 4
@@ -17,5 +15,7 @@ describe LunchMembers do
       end
       members.sort.should == all_members.sort
     end
+
+    it{ should have_exactly(2).groups }
   end
 end
